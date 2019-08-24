@@ -1,0 +1,30 @@
+<nav>
+    <a href="/pages/index">Index</a>
+    <a href="/pages/about">About</a>
+
+    <%= link_to 'Contact', pages_contact_path %>
+    <%= link_to 'Home', pages_home_path %>
+    <p>
+        <%= Faker::Name.name%>
+    </p>
+</nav>
+
+<div class="jumbotron">
+    <h1 class="display-4">Mi primera clase</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+
+<section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi ut voluptatum atque impedit, neque earum labore? Facilis provident iusto earum facere obcaecati autem molestias natus. Vero provident enim ipsum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio atque quas sed officia sunt recusandae exercitationem? Magni sunt quia reprehenderit? Excepturi quas iure iusto quod, iste in soluta labore quis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor id neque dolorem? Accusantium quam porro alias veniam harum aspernatur, incidunt eligendi iusto, tempore obcaecati consequuntur assumenda facere. Unde, voluptas quidem.</p>
+</section>
+<footer>
+    <p>
+        <%= Faker::Address.full_address %>
+    </p>
+    <%= render 'shared/footer' %>
+</footer>
